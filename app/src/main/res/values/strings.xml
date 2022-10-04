@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">FirebaseMemoryBox</string>
-    <string name="title"><u>Memory Box</u></string>
+    <string name="title"><b>Memory Box</b></string>
 </resources>
