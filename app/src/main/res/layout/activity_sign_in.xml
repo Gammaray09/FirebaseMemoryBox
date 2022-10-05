@@ -12,30 +12,31 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="@dimen/marginFromTop"
         android:text="@string/title"
         android:textColor="@color/primaryDarkColor"
-        android:textSize="48sp" />
+        android:textSize="@dimen/fontTitle" />
 
     <EditText
         android:id="@+id/userNameEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/editTextWidth"
+        android:layout_height="@dimen/editTextHeight"
         android:layout_below="@id/main_title"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="48dp"
-        android:ems="10"
+        android:layout_marginTop="@dimen/marginFromTop"
         android:hint="User Name"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:textColorHint="@color/primaryLightColor" />
+        android:textColorHint="@color/primaryLightColor"
+        android:textSize="@dimen/fontRegular" />
 
     <EditText
         android:id="@+id/passwordEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/editTextWidth"
+        android:layout_height="@dimen/editTextHeight"
         android:layout_below="@id/userNameEditText"
         android:layout_centerHorizontal="true"
+        android:textSize="@dimen/fontRegular"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Password"
@@ -44,11 +45,11 @@
 
     <Button
         android:id="@+id/logInButton"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/buttonWidth"
         android:layout_height="wrap_content"
         android:layout_below="@id/passwordEditText"
-        android:layout_marginLeft="75dp"
-        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@id/passwordEditText"
+        android:layout_marginTop="@dimen/topMargin"
         android:backgroundTint="@color/primaryDarkColor"
         android:text="Log In"
         android:textColor="@color/cardview_light_background"
@@ -58,13 +59,13 @@
 
     <Button
         android:id="@+id/signUpButton"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/buttonWidth"
         android:layout_height="wrap_content"
         android:layout_below="@id/passwordEditText"
-        android:layout_marginLeft="20dp"
-        android:layout_alignBottom="@id/logInButton"
         android:layout_alignTop="@id/logInButton"
-        android:layout_toRightOf="@id/logInButton"
+        android:layout_alignRight="@id/passwordEditText"
+        android:layout_alignBottom="@id/logInButton"
+
         android:backgroundTint="@color/primaryDarkColor"
         android:text="Sign Up"
         android:textColor="@color/cardview_light_background" />

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fontTitle"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/marginFromTop"
+        android:text="Add a Memory"
+        android:textColor="@color/primaryColor"
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        style="?attr/spinnerDropDownItemStyle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/topMargin"
+        android:background="@color/backgroundColor"
+        android:contentDescription="@string/spinner"
+        android:padding="@dimen/padding"
+        android:text="My Choice"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="@dimen/fontRegular" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/topMargin"
+        android:background="@color/backgroundColor"
+        android:hint="Name of Memory"
+        android:textSize="@dimen/fontRegular" />
+
+
+</LinearLayout>

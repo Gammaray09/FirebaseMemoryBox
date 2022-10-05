@@ -13,4 +13,12 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/primaryDarkColor</item>
+        <item name="android:textColor">@color/cardview_light_background</item>
+        <item name="android:textColorHighlight">@color/primaryDarkColor</item>
+        <item name="android:textColorHint">@color/primaryDarkColor</item>
+    </style>
 </resources>
