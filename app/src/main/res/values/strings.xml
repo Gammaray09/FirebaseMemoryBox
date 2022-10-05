@@ -2,4 +2,8 @@
     <string name="app_name">FirebaseMemoryBox</string>
     <string name="title"><b>Memory Box</b></string>
     <string name="spinner"><b>My Choice</b></string>
+
+    <string-array name="memoryRating">
+        <item></item>
+    </string-array>
 </resources>

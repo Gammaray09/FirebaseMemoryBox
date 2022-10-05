@@ -32,8 +32,9 @@
         android:textColor="@color/primaryDarkColor"
         android:textSize="@dimen/fontRegular" />
 
-    <TextView
-        android:id="@+id/textView2"
+
+    <EditText
+        android:id="@+id/memoryName"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:paddingLeft="10dp"
@@ -42,6 +43,25 @@
         android:background="@color/backgroundColor"
         android:hint="Name of Memory"
         android:textSize="@dimen/fontRegular" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/memEditTextDescHeight"
+        android:paddingLeft="10dp"
+        android:gravity="top"
+        android:layout_marginTop="@dimen/topMargin"
+        android:background="@color/backgroundColor"
+        android:hint="Description"
+        android:textSize="@dimen/fontRegular"/>
+
+    <Button
+        android:id="@+id/button"
+        style="@style/button"
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/primaryColor"
+        android:text="Add Memory" />
 
 
 </LinearLayout>
