@@ -4,6 +4,10 @@
     <string name="spinner"><b>My Choice</b></string>
 
     <string-array name="memoryRating">
-        <item></item>
+        <item>5.The Best</item>
+        <item>4.Really Great</item>
+        <item>3.Average</item>
+        <item>2.Not my favorite</item>
+        <item>1.The Worst</item>
     </string-array>
 </resources>

@@ -159,8 +159,17 @@ public class SignInActivity extends AppCompatActivity  {
             return false;
         } else {
             Log.i(TAG, userName + " " + password + " is set after getValues(), return true");
+            userName = removeTrailingSpaces(userName);
             return true;
         }
     }
+
+    private String removeTrailingSpaces(String email) {
+        String lastChar = email.substring(email.length() -1);
+        if (lastChar.equals(" "))
+            email = email.substring(0, email.length()-1);
+        return email;
+    }
+
 
 }
