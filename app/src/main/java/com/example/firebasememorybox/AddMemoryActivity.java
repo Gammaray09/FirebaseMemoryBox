@@ -43,6 +43,9 @@ public class AddMemoryActivity extends AppCompatActivity implements AdapterView.
     @Override
     public void onNothingSelected(AdapterView<?> parent) { }
 
+    public void addMemories(View v) {
+        Toast.makeText(getApplicationContext(), "Memory Added", Toast.LENGTH_SHORT).show();
+    }
 
 }
 

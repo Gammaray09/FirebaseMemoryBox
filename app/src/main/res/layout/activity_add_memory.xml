@@ -60,6 +60,7 @@
         style="@style/button"
         android:layout_width="150dp"
         android:layout_gravity="center"
+        android:onClick="addMemories"
         android:backgroundTint="@color/primaryColor"
         android:text="Add Memory" />
 

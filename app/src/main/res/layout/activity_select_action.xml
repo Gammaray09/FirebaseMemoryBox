@@ -11,8 +11,8 @@
         style="@style/button"
         android:layout_width="wrap_content"
         android:layout_centerHorizontal="true"
-        android:onClick="showMemories"
         android:layout_marginTop="@dimen/marginFromTop"
+        android:onClick="showMemories"
         android:text="See Memories" />
 
     <Button
@@ -21,8 +21,8 @@
         android:layout_width="wrap_content"
         android:layout_below="@id/seeMemoryButton"
         android:layout_centerHorizontal="true"
-        android:onClick="addMemories"
         android:layout_marginTop="@dimen/topMargin"
+        android:onClick="addMemories"
         android:text="Add a Memory" />
 
     <Button
@@ -30,8 +30,8 @@
         style="@style/button"
         android:layout_width="wrap_content"
         android:layout_below="@id/addMemoryButton"
-        android:onClick="logOutClicked"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/topMargin"
+        android:onClick="logOutClicked"
         android:text="Log Out" />
 </RelativeLayout>
