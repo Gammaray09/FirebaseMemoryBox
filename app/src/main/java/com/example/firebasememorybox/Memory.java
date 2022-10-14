@@ -7,13 +7,13 @@ public class Memory implements Parcelable {
     private int rating;
     private String name;
     private String desc;
-    private int imageResourceId;
+    private String docID;
 
-    public Memory(int rating, String name, String desc) {
+    public Memory(int rating, String name, String desc, String docID) {
         this.rating = rating;
         this.name = name;
         this.desc = desc;
-        this.imageResourceId = 0;
+        this.docID = docID;
     }
 
 
@@ -28,9 +28,8 @@ public class Memory implements Parcelable {
     public void setName(String name) {this.name = name;}
     public String getDesc() {return desc;}
     public void setDesc(String desc) {this.desc = desc;}
-    public int getImageResourceId() {return imageResourceId;}
-    public void setImageResourceId(int imageResourceId) {this.imageResourceId = imageResourceId;}
-
+    public String getDocID() {return docID;}
+    public void setDocID(String docID) {this.docID = docID;}
 
     public static final Parcelable.Creator<Memory> CREATOR = new
             Parcelable.Creator<Memory>() {
@@ -60,7 +59,7 @@ public class Memory implements Parcelable {
         name = parcel.readString();
         rating = parcel.readInt();
         desc = parcel.readString();
-        imageResourceId = parcel.readInt();
+        docID = parcel.readString();
     }
 
 
@@ -76,7 +75,7 @@ public class Memory implements Parcelable {
         dest.writeString(name);
         dest.writeInt(rating);
         dest.writeString(desc);
-        dest.writeInt(imageResourceId);
+        dest.writeString(docID);
     }
 
 
@@ -90,6 +89,6 @@ public class Memory implements Parcelable {
         name = "";
         rating = 0;
         desc = "";
-        imageResourceId = 0;
+        docID= "";
     }
 }

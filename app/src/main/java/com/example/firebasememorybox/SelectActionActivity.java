@@ -16,6 +16,7 @@ public class SelectActionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_select_action);
     }
 
+
     public void showMemories(View view) {
 
     }

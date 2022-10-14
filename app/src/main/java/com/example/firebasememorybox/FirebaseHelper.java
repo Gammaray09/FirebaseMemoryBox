@@ -67,6 +67,8 @@ public class FirebaseHelper {
         return mAuth;
     }
 
+    public FirebaseFirestore getDb() {return db;}
+
     public void logOutUser() {
         mAuth.signOut();
         this.uid = null;

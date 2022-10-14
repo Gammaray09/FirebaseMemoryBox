@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -18,6 +19,10 @@ public class AddMemoryActivity extends AppCompatActivity implements AdapterView.
     // https://www.youtube.com/watch?v=7tnlh1nVkuE
 
     Spinner spinner;
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +36,7 @@ public class AddMemoryActivity extends AppCompatActivity implements AdapterView.
         // this attaches my custom row design (how I want each row to look)
         adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown_row);
 
+
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
     }
@@ -43,9 +49,10 @@ public class AddMemoryActivity extends AppCompatActivity implements AdapterView.
     @Override
     public void onNothingSelected(AdapterView<?> parent) { }
 
-    public void addMemories(View v) {
-        Toast.makeText(getApplicationContext(), "Memory Added", Toast.LENGTH_SHORT).show();
-    }
+    public void addMemoryButtonClicked(View view) {
 
+    }
 }
+
+
 
