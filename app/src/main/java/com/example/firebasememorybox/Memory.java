@@ -16,6 +16,21 @@ public class Memory implements Parcelable {
         this.docID = docID;
     }
 
+    public Memory(int rating, String name, String desc) {
+        this.rating = rating;
+        this.name = name;
+        this.desc = desc;
+        this.docID = "No docID yet";
+    }
+
+
+    public Memory() {
+        rating = 0;
+        name = "No name";
+        desc = "No desc";
+        this.docID = "No docID yet";
+    }
+
 
     @Override
     public String toString() {
@@ -84,11 +99,5 @@ public class Memory implements Parcelable {
         return 0;
     }
 
-    // if you don't have a default constructor without parameters then code won't work
-    public Memory() {
-        name = "";
-        rating = 0;
-        desc = "";
-        docID= "";
-    }
+
 }
